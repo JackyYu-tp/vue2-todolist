@@ -79,7 +79,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @click="handleEditItem">EDIT</button>
+                  <button type="button" class="btn btn-primary" :disabled="!editItem.content" data-bs-dismiss="modal" @click="handleEditItem">EDIT</button>
                 </div>
               </div>
             </div>
